@@ -19,15 +19,15 @@ El proyecto consiste en consultar un archivo JSON (el  cual se encuentra dentro 
 ### Capturas
 
 - CAPTURA IMAGEN INICIAL
- ![Alt text](src/assets/captura.PNG?raw=true "IMAGEN INICIAL")
+ ![Alt text](src/assets/images/captura.PNG?raw=true "IMAGEN INICIAL")
 
 
 - CAPTURA EJEMPLO 1
- ![Alt text](src/assets/captura2.PNG?raw=true "VALIDANDO DATOS")
+ ![Alt text](src/assets/images/captura2.PNG?raw=true "EJEMPLO 1")
 
 
-- CAPTURA EJEMPLO 2
- ![Alt text](src/assets/captura3.PNG?raw=true "VALIDANDO DATOS")
+- CAPTURA EJEMPLO 
+ ![Alt text](src/assets/images/captura3.PNG?raw=true "EJEMPLO 2")
 
 
 
