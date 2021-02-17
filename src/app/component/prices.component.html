@@ -1,0 +1,28 @@
+<div class="container table-responsive">
+
+    <table class="border-danger table table-bordered shadow-sm">
+        <thead class="text-center">
+            <tr>
+                <th scope="col">Nombre Precio</th>
+                <th scope="col">Monto</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngIf="this.service.version.productOfferingPrices.length ===0">
+                <td colspan="2">
+                    <div class="p-2 alert-secondary text-center shadow-ms" role="alert">
+                        <strong>No se encontraron resultados</strong>
+                    </div>
+                </td>
+            </tr>
+            <tr *ngFor="let price of this.service.version.productOfferingPrices">
+
+                <td>{{price.versions[0].name}}</td>
+                <td>{{price.versions[0].price.amount | currency:price.versions[0].price.units.name }} </td>
+
+            </tr>
+
+        </tbody>
+    </table>
+
+</div>

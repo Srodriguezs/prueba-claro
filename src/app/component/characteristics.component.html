@@ -1,0 +1,27 @@
+<div class="container table-responsive scroll">
+
+    <table class="border-danger table table-bordered shadow-sm">
+        <thead class="text-center">
+            <tr>
+                <th scope="col">Características</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngIf="this.service.version.characteristics.length ===0">
+                <td>
+                    <div class="p-2 alert-secondary text-center shadow-ms" role="alert">
+                        <strong>No se encontraron resultados</strong>
+                    </div>
+                </td>
+            </tr>
+            <tr *ngFor="let chacter of this.service.version.characteristics">
+
+                <td> {{chacter.versions[0].name}}</td>
+
+
+            </tr>
+
+        </tbody>
+    </table>
+
+</div>

@@ -1,0 +1,50 @@
+<div class="container mt-5 ">
+    <div class="col-12 row p-0  border border-danger shadow">
+
+        <div class="col-12 row p-2">
+            <div class="col-6 m-auto">
+                <select class="shadow-sm border-danger  rounded-0 form-select" #version (change)='changeVersion(version.value)' aria-label="Default select example">
+                    <option selected>Seleccione...</option>
+                    
+                    <option [value]="item.id" *ngFor="let item of service.data ">{{item.versions[0].name}}</option>
+                    
+                  </select>
+            </div>
+
+            <div class="col-6">
+                <div class="w-100 d-flex p-1">
+                    <div class="float-right w-25">
+                        Id Oferta:
+                    </div>
+                    <div class="shadow-sm float-right w-50 border border-danger text-center">
+                        {{service.version.id}}
+                    </div>
+                </div>
+                <div class="w-100 d-flex p-1">
+                    <div class="float-right w-25">
+                        Nombre:
+                    </div>
+                    <div class="shadow-sm float-right w-50 border border-danger text-center">
+                        {{service.version.name }}
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <hr class="w-100">
+        <div class="col-6">
+            <app-characteristics></app-characteristics>
+        </div>
+        <div class="col-6">
+            <app-prices></app-prices>
+        </div>
+    </div>
+
+    <!-- <select class="form-select" aria-label="Default select example">
+        <option selected>Open this select menu</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select> -->
+
+</div>
