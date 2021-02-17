@@ -1,27 +1,37 @@
-# Claro
+# Prueba de Desarrollo Claro
+Este proyecto contiene la prueba de técnica.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
+## Contenido
 
-## Development server
+El proyecto consiste en consultar un archivo JSON (el  cual se encuentra dentro de la carpeta assets), permitiendo listar el nombre de cada dato y detallar cierta información por dato, el proyecto consta de la siguiente arquitectura.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* servicio : permite la lectura del archivo y filtra según el escogido, ademas es el responsable de manejar el objeto que muestra la información.
 
-## Code scaffolding
+* componente offer: muestra la información básica de información.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* componente characteristics: muestra las características del dato seleccionado.
 
-## Build
+* componente prices: muestra el nombre y el precio del dato seleccionado.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+### Capturas
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+- CAPTURA IMAGEN INICIAL
+ ![Alt text](src/assets/captura.PNG?raw=true "IMAGEN INICIAL")
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- CAPTURA EJEMPLO 1
+ ![Alt text](src/assets/captura2.PNG?raw=true "VALIDANDO DATOS")
+
+
+- CAPTURA EJEMPLO 2
+ ![Alt text](src/assets/captura3.PNG?raw=true "VALIDANDO DATOS")
+
+
+
+
+
+
+
